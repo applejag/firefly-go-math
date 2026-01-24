@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2026 Kalle Fagerberg
+#
+# SPDX-License-Identifier: CC0-1.0
+
+[tools]
+"github:firefly-zero/firefly-cli" = { version = "0.15.7", rename_exe = "ff" }
+"pipx:reuse" = "latest"
+tinygo = "0.40.1"
+uv = "latest"
