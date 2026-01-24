@@ -24,6 +24,12 @@ I have compared the compiled output with non-generic variants to confirm
 that the generic ones does not cause any regressions, even though they use
 quirky hacks like `switch x := any(a).(type)`
 
+## Installation
+
+```bash
+go get github.com/applejag/firefly-go-math
+```
+
 ## License
 
 This project conforms to the [REUSE](https://reuse.software/) standard.
