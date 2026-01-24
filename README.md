@@ -7,6 +7,7 @@ SPDX-License-Identifier: CC-BY-4.0
 # Game math library for Firefly Go SDK
 
 [![NO AI](https://raw.githubusercontent.com/nuxy/no-ai-badge/master/badge.svg)](https://github.com/nuxy/no-ai-badge)
+[![Go Reference](https://pkg.go.dev/badge/github.com/applejag/firefly-go-math.svg)](https://pkg.go.dev/github.com/applejag/firefly-go-math)
 [![REUSE status](https://api.reuse.software/badge/github.com/applejag/firefly-go-math)](https://api.reuse.software/info/github.com/applejag/firefly-go-math)
 
 Complementary library to [firefly-go](https://github.com/firefly-zero/firefly-go)
