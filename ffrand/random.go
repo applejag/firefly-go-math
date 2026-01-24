@@ -1,6 +1,12 @@
-// Package random contains a reimplementation of the [math/rand] package
+// SPDX-FileCopyrightText: 2026 Kalle Fagerberg
+// SPDX-FileCopyrightText: 2009 The Go Authors
+//
+// SPDX-License-Identifier: MIT
+// SPDX-License-Identifier: BSD-3-Clause
+
+// Package ffrand contains a reimplementation of the [math/rand] package
 // that uses [firefly]'s [firefly.GetRandom]
-package random
+package ffrand
 
 import (
 	"math"
