@@ -239,7 +239,7 @@ func Shuffle(n int, swap func(i, j int)) {
 // Implements the Fisher-Yates shuffle algorithm.
 //
 // Uses the default [Rand].
-func ShuffleSlice[E any](slice []E) {
+func ShuffleSlice[E any, S ~[]E](slice S) {
 	for i := len(slice) - 1; i > 0; i = i - 1 {
 		j := Intn(i + 1)
 		slice[i], slice[j] = slice[j], slice[i]
