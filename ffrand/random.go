@@ -115,14 +115,31 @@ func (r Rand) Intn(n int) int {
 	return int(r.Int63n(int64(n)))
 }
 
+// Pseudo-random intger in the half-open interval [min,max)
+//
+// It panics if min==max.
+func (r Rand) IntRange(min, max int) int {
+	return min + r.Intn(max-min)
+}
+
 // Pseudo-random number in the half-open interval [0.0,1.0).
 func (r Rand) Float64() float64 {
 	return float64(r.Int63n(1<<53)) / (1 << 53)
 }
 
+// Pseudo-random number in the half-open interval [min,max)
+func (r Rand) Float64Range(min, max float64) float64 {
+	return min + r.Float64()*(max-min)
+}
+
 // Pseudo-random number in the half-open interval [0.0,1.0).
 func (r Rand) Float32() float32 {
 	return float32(r.Int31n(1<<24)) / (1 << 24)
+}
+
+// Pseudo-random number in the half-open interval [min,max)
+func (r Rand) Float32Range(min, max float32) float32 {
+	return min + r.Float32()*(max-min)
 }
 
 // Pseudo-random 63-bit integer as an int64.
@@ -180,6 +197,23 @@ func Float64() float64 { return globalRand.Float64() }
 //
 // Uses the default [Rand].
 func Float32() float32 { return globalRand.Float32() }
+
+// Pseudo-random intger in the half-open interval [min,max)
+//
+// It panics if min==max.
+//
+// Uses the default [Rand].
+func IntRange(min, max int) int { return globalRand.IntRange(min, max) }
+
+// Pseudo-random number in the half-open interval [min,max)
+//
+// Uses the default [Rand].
+func Float64Range(min, max float64) float64 { return globalRand.Float64Range(min, max) }
+
+// Pseudo-random number in the half-open interval [min,max)
+//
+// Uses the default [Rand].
+func Float32Range(min, max float32) float32 { return globalRand.Float32Range(min, max) }
 
 // Pseudo-randomizes the order of elements.
 //
