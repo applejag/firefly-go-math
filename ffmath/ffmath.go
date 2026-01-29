@@ -334,3 +334,8 @@ func Sign[T Number](a T) T {
 		return a
 	}
 }
+
+// Returns true if the float is neither NaN nor infinity.
+func IsFinite(f float32) bool {
+	return !tinymath.IsNaN(f) && f > tinymath.NegInf && f < tinymath.Inf
+}
