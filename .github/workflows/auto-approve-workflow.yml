@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2026 Kalle Fagerberg
+#
+# SPDX-License-Identifier: CC0-1.0
+
 # Based on: https://docs.github.com/en/code-security/tutorials/secure-your-dependencies/automating-dependabot-with-github-actions#automatically-approving-a-pull-request
 name: Dependabot auto-approve
 on: pull_request
