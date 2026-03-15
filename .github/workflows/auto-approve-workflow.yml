@@ -25,4 +25,4 @@ jobs:
           GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: |
           gh pr review --approve "$PR_URL"
-          gh pr merge --auto -ds
+          gh pr merge --auto -ds "$PR_URL"
