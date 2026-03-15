@@ -7,7 +7,8 @@ name: Dependabot auto-approve
 on: pull_request
 
 permissions:
-  pull-requests: write
+  pull-requests: write # required for 'gh pr review'
+  contents: write # required for 'gh pr merge'
 
 jobs:
   dependabot:
