@@ -7,3 +7,4 @@
 "pipx:reuse" = "latest"
 tinygo = "0.40.1"
 uv = "latest"
+zizmor = "latest"
