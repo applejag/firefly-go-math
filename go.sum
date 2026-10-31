@@ -1,4 +1,4 @@
 github.com/firefly-zero/firefly-go v0.14.0 h1:np2VnIJcwWehLaZcJ5h5a6HXUkYmb7ZMfqOv04RNI3k=
 github.com/firefly-zero/firefly-go v0.14.0/go.mod h1:9emABajSRtkvE0+8uajSbuY95R7DWVR6u+srfsLLvOo=
-github.com/orsinium-labs/tinymath v1.2.0 h1:mxbQzDQz00XQvPqPmIRCgXvYMyPCgCng1kYWfvjXr6M=
-github.com/orsinium-labs/tinymath v1.2.0/go.mod h1:WPXX6ei3KSXG7JfA03a+ekCYaY9SWN4I+JRl2p6ck+A=
+github.com/orsinium-labs/tinymath v1.2.1 h1:WLMSyvAwJ3snfzz+fmUatU8FxAmIpVBvb4o+Ml5OUVI=
+github.com/orsinium-labs/tinymath v1.2.1/go.mod h1:WPXX6ei3KSXG7JfA03a+ekCYaY9SWN4I+JRl2p6ck+A=
